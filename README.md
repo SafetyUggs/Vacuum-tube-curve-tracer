@@ -120,19 +120,4 @@ on those.
 `State` is `CV` or `CC` — a `CC` row means the supply hit its current limit at
 that point and the reading is clamped, not a true characteristic point.
 
----
-
-## How it maps to the original request
-
-- **Anode sweep + live current logging + big graph** → the anode supply is swept
-  low→high in N steps with a configurable dwell, current is read at each point,
-  and everything plots live on the chart panel.
-- **Optional second supply for grid bias, else manual grid voltage** → the
-  "Use grid supply" toggle switches between sweeping a real grid supply (a curve
-  per bias) and a single manually-entered bias.
-- **Filament voltage input** → entered and logged as a reference (heater is
-  powered separately).
-- **Save as CSV and image** → auto-save on completion plus manual Export CSV /
-  Export PNG buttons.
-
 
